@@ -1,17 +1,17 @@
 #RÉPÁS Zoltán
 #2023.
 
-#### Init for PhotoSan software ######################################
+#### Init section ####################################################
 import readModulEOV as EOV
 import PhotoScan
 doc = PhotoScan.app.document
 chunk = doc.activeChunk
-#### End of inti######################################################
+#### End of init ######################################################
 
 #### SETTINGS ########################################################
 #   Edit before use:
-type = "tif"                            #file type of the result picture
-folder = "C:/python/HelloAgiSoft/"      #path of export directory, need to be exist
+type = "tif"                            #file type of the exported picture
+folder = "C:/python/HelloAgiSoft/"      #path of export directory need to be exist
 d_x = d_y = 0.5                         #Resolution of the ortho mosaic in [m]:
 
 proj = PhotoScan.CoordinateSystem()     #Coordinate System Datum:
